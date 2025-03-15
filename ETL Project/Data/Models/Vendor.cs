@@ -7,7 +7,7 @@ public class Vendor
     public DateTime DropoffTime { get; set; }
     public int? CountOfPassengers { get; set; }
     public double TripDistance { get; set; }
-    public string StoreAndFwdFlag { get; set; } = null!;
+    public string? StoreAndFwdFlag { get; set; }
     public decimal FareAmount { get; set; }
     public decimal TipAmount { get; set; }
 

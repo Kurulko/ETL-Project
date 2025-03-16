@@ -154,8 +154,24 @@ WHERE PULocationId = 193;
 
 ## Questions and Answers
 
+**№1**
+
 **Question**: 
 Assume your program will be used on much larger data files. Describe in a few sentences what you would change if you knew it would be used for a 10GB CSV input file.
 
 **Answer**:
 I would use the `SqlBulkCopy` class from the `Microsoft.Data.SqlClient` namespace to use bulk insert operations, I would also implement streaming processing (e.g. reading the file in smaller portions) instead of loading the entire CSV file into memory, and last but not least, I would optimize the database schema by adding relevant indexes.
+
+---
+
+**№2**
+
+**Question**: 
+Number of rows in your table after running the program
+
+**Answer**: 
+
+Number of rows after running: **29889** (in db)
+
+Number of duplicate rows: **111** (in duplicates.csv file)
+
